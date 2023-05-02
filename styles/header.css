@@ -48,3 +48,19 @@ nav
     letter-spacing: 1px;
     color: white;
 }
+
+.nav-menu ul li::after
+{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #ea4020;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-menu ul li:hover::after
+{
+    width: 100%;
+}
