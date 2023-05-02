@@ -49,6 +49,39 @@ button .fa-sharp
     color: inherit;
 }
 
+.home button,
+.projects button
+{
+    transition: background-color 0.3s, border-color 0.3s,
+    color 0.3s, padding-top 0.3s, padding-bottom 0.3s;
+}
+
+.about button,
+.contact button
+{
+    transition: background-color 0.3s, border-color 0.3s,
+    color 0.3s, margin-left 0.3s;
+}
+
+button:hover
+{
+    background-color: white;
+    color: black !important;
+    border-color: black;
+}
+
+.home button:active,
+.projects button:active
+{
+    padding: 2px 0px;
+}
+
+.about button:active,
+.contact button:active
+{
+    margin-left: 40px;
+}
+
 nav .fa-sharp
 {
     color: white;
