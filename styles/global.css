@@ -105,3 +105,69 @@ nav .fa-sharp
     color: white;
     display: none;
 }
+
+/* media queries */
+@media(max-width: 700px)
+{
+    .home img,
+    .name-tag
+    {
+        display: none;
+    }
+
+    .home .left-container
+    {
+        text-align: center;
+    }
+
+    .name-heading,
+    .role-heading
+    {
+        font-size: 34px !important;
+        padding-bottom: 10px;
+    }
+
+    .contact-me-button,
+    .resume-button
+    {
+        width: 140px !important;
+        margin: 0 !important;
+    }
+
+    .contact-me-button
+    {
+        margin-right: 12px !important;
+    }
+
+    .nav-menu
+    {
+        height: 100vh;
+        width: 180px;
+        font-size: 30px;
+        position: absolute;
+        background: rgb(76, 76, 76);
+        top: 0;
+        right: -200px;
+        text-align: left !important;
+        transition: 1s;
+    }
+
+    .nav-menu ul
+    {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .nav-menu ul li
+    {
+        display: block;
+    }
+
+    nav .fa-sharp
+    {
+        font-size: 24px;
+        display: block;
+        margin: 10px 0px 10px 14px;
+        cursor: pointer;
+    }
+}
