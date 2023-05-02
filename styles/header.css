@@ -1,0 +1,50 @@
+.header
+{
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+nav
+{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6%;
+    border-bottom: 1px solid white;
+}
+
+.nav-logo
+{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.nav-logo span
+{
+    color: rgb(30, 215, 96);
+}
+
+.nav-menu
+{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-menu ul li
+{
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-menu ul li a
+{
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: white;
+}
