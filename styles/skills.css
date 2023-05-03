@@ -7,11 +7,12 @@
 
 .skills .container
 {
-    height: 879px;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    padding: 150px 0;
+    margin: auto;
 }
 
 .skills .skill-icon-container
@@ -47,8 +48,6 @@
 
 .skills .skill-icon-container div hr
 {
-    height: 2px;
     width: 34px;
-    border: none;
     margin: 18px 0 12px 0;
 }
