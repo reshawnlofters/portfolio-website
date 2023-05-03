@@ -5,10 +5,9 @@
     position: relative;
 }
 
-.home .container
+.home .section-container
 {
     height: 100vh;
-    /* height: 929px; */
     width: 80%;
     color: white;
     display: flex;
@@ -51,7 +50,7 @@
     margin-bottom: 20px;
 }
 
-.home .container p
+.home .section-container p
 {
     max-width: 600px;
     font-size: 14px;

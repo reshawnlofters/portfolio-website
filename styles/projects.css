@@ -4,7 +4,7 @@
     position: relative;
 }
 
-.projects .container
+.projects .section-container
 {
     width: 80%;
     display: flex;
@@ -21,7 +21,7 @@
     margin-bottom: 50px;
 }
 
-h3
+.projects .project-title
 {
     font-size: 22px;
     font-weight: 600;

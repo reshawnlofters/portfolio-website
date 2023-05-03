@@ -4,7 +4,7 @@
     position: relative;
 }
 
-.about .container
+.about .section-container
 {
     width: 80%;
     display: flex;
@@ -14,14 +14,14 @@
     margin: auto;
 }
 
-.about .container div
+.about .section-container div
 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.about .container p
+.about .section-container p
 {
     max-width: 600px;
     color: rgb(82, 82, 82);
