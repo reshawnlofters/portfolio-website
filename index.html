@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/9af645afab.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/header.css">
@@ -196,21 +197,21 @@
                     <form action="" class="contact-form" id="contactForm">
                         <div class="name-email-row">
                             <div class="input-group">
-                                <input type="text" name="Name" id="name" required>
+                                <input type="text" name="user-name" id="name" required>
                                 <label for="name">Name</label>
                             </div>
                             <div class="input-group">
-                                <input type="text" name="Email" id="email" required>
+                                <input type="text" name="user-email" id="email" required>
                                 <label for="email">Email</label>
                             </div>
                         </div>
                         <div class="input-group">
-                            <input type="text" name="Subject" id="subject" required>
+                            <input type="text" name="user-subject" id="subject" required>
                             <label for="subject">Subject</label>
                         </div>
                         <div class="input-group">
                             <div class="form-textarea-container">
-                                <textarea name="Comment" id="comment" rows="7" required></textarea>
+                                <textarea name="user-comment" id="comment" rows="7" required></textarea>
                                 <label for="comment">Comment</label>
                                 <div class="form-textarea-char-counter">
                                     <span class="current-number">0</span>
@@ -218,6 +219,7 @@
                                 </div>
                             </div>
                         </div>
+                        <p class="form-submit-message" id="formSubmitMessage"></p>
                         <button class="form-submit-button" type="submit">SUBMIT <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
                     </form>
                 </div>

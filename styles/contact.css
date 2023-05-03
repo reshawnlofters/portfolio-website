@@ -112,3 +112,8 @@ textarea:valid~label
 {
     border-color: #ea4020;
 }
+
+.form-submit-message
+{
+    margin-bottom: 16px;
+}
