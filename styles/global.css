@@ -39,28 +39,15 @@ button
     color: white;
     padding: 14px 0;
     letter-spacing: 2px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0 2px 4px -1px;
+    transition: 0.3s;
     cursor: pointer;
 }
 
 button .fa-sharp
 {
     color: inherit;
-}
-
-.home button,
-.projects button
-{
-    transition: background-color 0.3s, border-color 0.3s,
-    color 0.3s, padding-top 0.3s, padding-bottom 0.3s;
-}
-
-.about button,
-.contact button
-{
-    transition: background-color 0.3s, border-color 0.3s,
-    color 0.3s, margin-left 0.3s;
 }
 
 button:hover
@@ -73,7 +60,7 @@ button:hover
 .home button:active,
 .projects button:active
 {
-    padding: 2px 0px;
+    padding: 2px 0;
 }
 
 .about button:active,
@@ -166,7 +153,7 @@ nav .fa-sharp
     {
         font-size: 24px;
         display: block;
-        margin: 10px 0px 10px 14px;
+        margin: 10px 0 10px 14px;
         cursor: pointer;
     }
 }
