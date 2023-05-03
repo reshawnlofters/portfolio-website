@@ -5,23 +5,17 @@
     position: relative;
 }
 
-.container
+.home .container
 {
     height: 100vh;
+    /* height: 929px; */
     width: 80%;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 60px;
-    margin: 0 auto;
-}
-
-.home .left-container /* maybe */
-{
-    width: 600px;
-    display: flex;
-    flex-direction: column;
+    margin: auto;
 }
 
 .name-tag
@@ -53,8 +47,9 @@
     margin-bottom: 20px;
 }
 
-.home p
+.home .container p
 {
+    max-width: 600px;
     font-size: 14px;
     word-spacing: 2px;
     margin-bottom: 50px;

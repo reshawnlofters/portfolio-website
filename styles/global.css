@@ -87,15 +87,14 @@ button:hover
     font-size: 40px;
     font-weight: 700;
     color: black;
-    margin-top: -30px;
     margin-bottom: 14px;
 }
 
 hr
 {
-    background: #ea4020;
     height: 2px;
     width: 70px;
+    background: #ea4020;
     border: none;
     margin-bottom: 30px;
 }
