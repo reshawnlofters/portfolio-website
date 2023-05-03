@@ -56,6 +56,26 @@ input, textarea
     padding: 10px;
 }
 
+.input-group label
+{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    transition: 0.2s;
+    cursor: text;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label
+{
+    font-size: 12px;
+    top: -35px;
+}
+
 .name-email-row
 {
     display: flex;
@@ -80,4 +100,15 @@ input, textarea
     display: flex;
     justify-content: flex-end;
     padding-top: 10px;
+}
+
+.active .form-textarea-char-counter
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.error textarea
+{
+    border-color: #ea4020;
 }
