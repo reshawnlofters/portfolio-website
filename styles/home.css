@@ -18,10 +18,15 @@
     margin: auto;
 }
 
+.name-tag,
+.role-heading
+{
+    font-weight: 400;
+}
+
 .name-tag
 {
     font-size: 12px;
-    font-weight: 400;
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
@@ -42,7 +47,6 @@
 .role-heading
 {
     font-size: 38px;
-    font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
