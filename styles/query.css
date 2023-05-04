@@ -112,7 +112,7 @@
     .project-container img
     {
         width: 68% !important;
-        border-radius: 20px;
+        border-radius: 10px;
     }
 
     .project-container img:hover
@@ -128,5 +128,32 @@
     .project-descr-container p
     {
         width: 80%;
+    }
+
+    /* Footer */
+    .footer .section-container
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .section-container div
+    {
+        margin-bottom: 12px;
+    }
+    
+    .footer .name-heading
+    {
+        font-size: 26px !important;
+    }
+
+    .footer .role-heading
+    {
+        font-size: 17px !important;
+    }
+
+    .copyright-message
+    {
+        max-width: 70%;
     }
 }
