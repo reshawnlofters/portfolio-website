@@ -63,3 +63,7 @@ const sendEmail = (e) =>
 }
 
 contactForm.addEventListener('submit', sendEmail)
+
+// auto update year in footer copyright notice
+const yearSpan = document.querySelector('#currentYear');
+yearSpan.innerText = new Date().getFullYear();
