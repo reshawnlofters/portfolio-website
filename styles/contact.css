@@ -59,6 +59,7 @@ input, textarea
 .input-group label
 {
     height: 100%;
+    color: rgb(82, 82, 82);
     position: absolute;
     top: 0;
     left: 0;
@@ -116,4 +117,9 @@ textarea:valid~label
 .form-submit-message
 {
     margin-bottom: 16px;
+}
+
+.form-textarea-char-counter
+{
+    color: rgb(82, 82, 82);
 }
