@@ -1,0 +1,31 @@
+.footer
+{
+    width: 100%;
+    color: white;
+    position: relative;
+}
+
+.footer .section-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 1% 6%;
+}
+
+.footer .name-heading
+{
+    font-size: 26px;
+}
+
+.footer .role-heading
+{
+    font-size: 18px;
+    margin: 0;
+}
+
+.copyright-message
+{
+    font-size: 14px;
+}
