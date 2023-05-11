@@ -13,7 +13,6 @@ nav
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid white;
     padding: 0 6%;
 }
 
@@ -44,7 +43,7 @@ nav
 
 .nav-menu ul li a
 {
-    font-size: 14px;
+    font-size: 15px;
     color: white;
     letter-spacing: 1px;
 }
@@ -53,7 +52,7 @@ nav
 {
     width: 0;
     height: 2px;
-    background: #ea4020;
+    background: rgb(22, 164, 72);
     display: block;
     content: "";
     margin: auto;

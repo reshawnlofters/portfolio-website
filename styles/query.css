@@ -8,7 +8,7 @@
         padding: 100px 0 !important;
     }
 
-    h1
+    .section-title
     {
         font-size: 34px !important;
     }
@@ -138,11 +138,6 @@
         padding: 10% 6%;
     }
 
-    .footer .section-container div
-    {
-        margin-bottom: 12px;
-    }
-    
     .footer .name-heading
     {
         font-size: 26px !important;
@@ -151,10 +146,11 @@
     .footer .role-heading
     {
         font-size: 17px !important;
+        padding-bottom: 18px;
     }
 
     .copyright-notice
     {
-        max-width: 70%;
+        max-width: 71%;
     }
 }
