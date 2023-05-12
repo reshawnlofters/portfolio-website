@@ -18,27 +18,27 @@ function hideMenu()
     navMenu.style.right = '-200px';
 }
 
-// track the inputted contact form textarea characters
+// track number of characters inputted into contact form textarea
 textarea.addEventListener('keyup', () =>
 {
-let characterLength = textarea.value.length;
-    currentNumber.innerHTML = characterLength;
+    let characterLength = textarea.value.length;
+        currentNumber.innerHTML = characterLength;
 
-characterLength > 0 
-    ? inputContainer.classList.add('active') 
-    : inputContainer.classList.remove('active');
+    characterLength > 0 
+        ? inputContainer.classList.add('active') 
+        : inputContainer.classList.remove('active');
 
-characterLength > 1000 
-    ? inputContainer.classList.add('error') 
-    : inputContainer.classList.remove('error');
+    characterLength > 1000 
+        ? inputContainer.classList.add('error') 
+        : inputContainer.classList.remove('error');
 })
 
-// send an email when the contact form is submitted
+// send email when contact form is submitted
 const sendEmail = (e) =>
 {
     e.preventDefault()
 
-    // serviceID - templateID - #form - publicKey
+    // serviceID, templateID, id, publicKey
     emailjs.sendForm('service_3fgmcge', 'template_a6mq49i', '#contactForm', '9-ljn6pGNdbjVUgzh')
         .then(() =>
         {
@@ -67,3 +67,19 @@ contactForm.addEventListener('submit', sendEmail)
 // auto update year in footer copyright notice
 const yearSpan = document.querySelector('#currentYear');
 yearSpan.innerText = new Date().getFullYear();
+
+// change navbar background on scroll
+document.addEventListener('scroll', () =>
+{
+    const header = document.querySelector('header');
+
+    if (window.scrollY > 0)
+    {
+        header.classList.add('scrolled');
+    }
+
+    else
+    {
+        header.classList.remove('scrolled');
+    }
+})
