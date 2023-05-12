@@ -111,7 +111,7 @@
 
     .project-container img
     {
-        width: 68% !important;
+        width: 72% !important;
         border-radius: 10px;
     }
 
@@ -128,6 +128,32 @@
     .project-descr-container p
     {
         width: 80%;
+    }
+
+    /* Contact */
+    .contact-grid
+    {
+        display: flex;
+    }
+
+    .contact-grid img
+    {
+        display: none;
+    }
+
+    .contact-form-container
+    {
+        padding: 35px;
+    }
+
+    .input-group
+    {
+        width: 300px;
+    }
+
+    .name-email-row
+    {
+        display: block;
     }
 
     /* Footer */
