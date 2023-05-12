@@ -75,3 +75,26 @@
     background-color: black;
     border: 1px solid white;
 }
+
+.home .section-container img
+{
+    animation: move 2.5s linear infinite;
+}
+
+@keyframes move
+{
+    0%
+    {
+        transform: translate(-15px, 0px);
+    }
+
+    50%
+    {
+        transform: translate(0px, -15px);
+    }  
+    
+    100%
+    {
+        transform: translate(-15px, 0px);
+    }  
+}
