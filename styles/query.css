@@ -101,7 +101,7 @@
 
     .skills .skill-icon-container div
     {
-        width: 240px !important;
+        width: 255px !important;
     }
 
     /* Projects */
@@ -110,7 +110,7 @@
         padding-top: 70px;
         padding-bottom: 0px;
     }
-    
+
     .project-container
     {
         flex-direction: column;
@@ -119,12 +119,17 @@
     .project-container img
     {
         width: 72% !important;
-        border-radius: 10px;
+        border-radius: 20px;
     }
 
     .project-container img:hover
     {
         margin: 0 !important;
+    }
+    
+    .project-title
+    {
+        font-size: 24px;
     }
 
     .project-descr-container
@@ -134,28 +139,15 @@
 
     .project-descr-container p
     {
+        font-size: 16px;
         width: 80%;
     }
 
     /* Contact */
-    .contact-grid
-    {
-        display: flex;
-    }
-
-    .contact-grid img
-    {
-        display: none;
-    }
-
     .contact-form-container
     {
+        width: 350px;
         padding: 35px;
-    }
-
-    .input-group
-    {
-        width: 300px;
     }
 
     .name-email-row
@@ -246,7 +238,18 @@
 
     .project-container img
     {
-        width: 68% !important;
+        width: 64% !important;
+    }
+
+    .project-descr-container p
+    {
+        font-size: 15px;
+        width: 70%;
+    }
+
+    .project-title
+    {
+        font-size: 22px;
     }
 
     /* Contact */

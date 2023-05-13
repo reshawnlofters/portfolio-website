@@ -21,7 +21,7 @@
     margin-bottom: 50px;
 }
 
-.projects .project-title
+.project-title
 {
     font-size: 22px;
     font-weight: 600;
@@ -36,7 +36,9 @@
 
 .project-container img
 {
-    border-radius: 6px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0 2px 4px -1px;
     transition: 0.3s;
@@ -58,7 +60,7 @@
 
 .project-descr-container p
 {
-    font-size: 14px;
+    font-size: 15px;
     color: rgb(82, 82, 82);
     margin-bottom: 14px;
 }
