@@ -144,6 +144,16 @@
     }
 
     /* Contact */
+    .contact-grid
+    {
+        display: flex;
+    }
+
+    .contact-info-container
+    {
+        display: none;
+    }
+
     .contact-form-container
     {
         width: 350px;

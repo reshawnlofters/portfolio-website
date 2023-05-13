@@ -178,35 +178,38 @@
     <section class="contact" id="contact">
         <div class="section-container">
             <h1 class="section-title">Contact Me</h1><hr/>
-            <div class="contact-form-container">
-                <form action="" class="contact-form" id="contactForm">
-                    <div class="name-email-row">
-                        <div class="input-group">
-                            <input type="text" name="user-name" id="name" required>
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="input-group">
-                            <input type="text" name="user-email" id="email" required>
-                            <label for="email">Email</label>
-                        </div>
-                    </div>
-                    <div class="input-group">
-                        <input type="text" name="user-subject" id="subject" required>
-                        <label for="subject">Subject</label>
-                    </div>
-                    <div class="input-group">
-                        <div class="form-textarea-container">
-                            <textarea name="user-message" id="message" rows="7" required></textarea>
-                            <label for="message">Message</label>
-                            <div class="form-textarea-char-counter">
-                                <span class="current-number">0</span>
-                                <span class="limit-number">/1000</span>
+            <div class="contact-grid">
+                <span class="contact-info-container"></span>
+                <div class="contact-form-container">
+                    <form action="" class="contact-form" id="contactForm">
+                        <div class="name-email-row">
+                            <div class="input-group">
+                                <input type="text" name="user-name" id="name" required>
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" name="user-email" id="email" required>
+                                <label for="email">Email</label>
                             </div>
                         </div>
-                    </div>
-                    <p class="form-submit-message" id="formSubmitMessage"></p>
-                    <button class="form-submit-button" type="submit">SUBMIT <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
-                </form>
+                        <div class="input-group">
+                            <input type="text" name="user-subject" id="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="input-group">
+                            <div class="form-textarea-container">
+                                <textarea name="user-message" id="message" rows="7" required></textarea>
+                                <label for="message">Message</label>
+                                <div class="form-textarea-char-counter">
+                                    <span class="current-number">0</span>
+                                    <span class="limit-number">/1000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="form-submit-message" id="formSubmitMessage"></p>
+                        <button class="form-submit-button" type="submit">SUBMIT <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>

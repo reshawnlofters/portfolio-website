@@ -15,20 +15,20 @@
     margin: auto;
 }
 
-.skills .skill-icon-container
+.skill-icon-container
 {
     display: grid;
     grid-template-columns: 250px 250px 250px;
     gap: 30px;
 }
 
-.skills .skill-icon-container div
+.skill-icon-container div
 {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
-    border-radius: 14px;
+    border-radius: 10px;
     color: rgb(82, 82, 82);
     padding: 40px 60px;
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px,
@@ -36,18 +36,18 @@
     transition: 0.3s;
 }
 
-.skills .skill-icon-container div:hover
+.skill-icon-container div:hover
 {
     opacity: 0.7;
     margin: -10px 0 10px 0;
 }
 
-.skills .skill-icon-container label
+.skill-icon-container label
 {
     font-size: 18px;
 }
 
-.skills .skill-icon-container div hr
+.skill-icon-container div hr
 {
     width: 34px;
     margin: 18px 0 12px 0;
