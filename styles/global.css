@@ -26,6 +26,7 @@ a
 
 button
 {
+    width: 150px;
     color: white;
     font-size: 12px;
     font-weight: 500;
@@ -82,5 +83,10 @@ hr
 nav .fa-sharp
 {
     color: white;
+    display: none;
+}
+
+.home br
+{
     display: none;
 }

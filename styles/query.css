@@ -1,3 +1,12 @@
+@media(max-width: 1250px)
+{
+    /* Home */
+    .home br
+    {
+        display: block;
+    }
+}
+
 @media(max-width: 1050px)
 {
     /* Global */
@@ -14,6 +23,11 @@
     }
 
     /* Home */
+    .home br
+    {
+        display: none;
+    }
+
     .home img
     {
         display: none;
@@ -221,6 +235,15 @@
     .skill-icon-container div
     {
         width: 255px !important;
+    }
+}
+
+@media(max-width: 600px)
+{
+    /* Home */
+    .home br
+    {
+        display: block;
     }
 }
 
