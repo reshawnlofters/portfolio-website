@@ -83,3 +83,12 @@ document.addEventListener('scroll', () =>
         header.classList.remove('scrolled');
     }
 })
+
+// role heading typing effect
+var typed = new Typed(".auto-type",
+{
+    strings: ["Developer", "Enthusiast"],
+    typeSpeed: 120,
+    backSpeed: 120,
+    loop: true
+})

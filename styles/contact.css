@@ -18,11 +18,12 @@
 {
     display: grid;
     grid-template-columns: 270px 700px;
+    gap: 20px;
 }
 
 .contact-info-container
 {
-    background-color: rgb(22, 164, 72);
+    background-color: black;
     border-radius: 10px;
 
 }

@@ -96,6 +96,7 @@
     .contact-grid
     {
         display: flex;
+        gap: 0;
     }
 
     .contact-form-container
