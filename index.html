@@ -32,8 +32,7 @@
                 Reshawn<span>&#46;</span>
             </a>
             <div class="nav-menu" id="navMenu">
-                <!-- close toggle menu icon -->
-                <i class="fa-sharp fa-solid fa-xmark" id="close-menu-icon" onclick="hideMenu()"></i>
+                <i class="fa-sharp fa-solid fa-xmark" id="close-menu-icon" onclick="closeMenu()"></i>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -42,8 +41,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <!-- open toggle menu icon -->
-            <i class="fa-sharp fa-solid fa-bars" id="show-menu-icon" onclick="showMenu()"></i>
+            <i class="fa-sharp fa-solid fa-bars" id="open-menu-icon" onclick="openMenu()"></i>
         </nav>
     </header>
 
@@ -53,17 +51,17 @@
             <div>
                 <h6 class="name-tag">&#8212; Reshawn Lofters</h6>
                 <h2 class="name-heading">Hi&#44; I&#39;m <span>Reshawn</span></h2>
-                <h2 class="role-heading">I am a Software <br><span class="auto-type">Developer</span></h2>
+                <h2 class="role-heading">I am a Software <br><span class="multi-text">Developer</span></h2>
                 <p>
-                    I am a computer science student passionate about leveraging technology
-                    to promote innovation and solve complex buinesss problems.
+                    I have a passion for using technology to propel innovation
+                    and solve complex problems that can benefit others.
                 </p>
                 <div>
                     <a href="#contact">
-                        <button class="contact-me-button">CONTACT ME</button>
+                        <button class="contact-me-btn">CONTACT ME</button>
                     </a>
                     <a href="images/Reshawn Lofters Resume.pdf" target="_blank" download>
-                        <button class="resume-button">RESUME <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                        <button class="resume-btn">RESUME <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
                     </a>
                 </div>
             </div>
@@ -79,11 +77,11 @@
                 <h1 class="section-title">About Me</h1><hr/>
                 <p>
                     I am a second-year computer science student at Ontario Tech University.
-                    I am excited to explore new opportunities in software development to apply my skills and knowledge to challenging projects,
+                    I am eager to explore new opportunities in software development to apply my skills and knowledge to challenging projects,
                     collaborate in dynamic team environments, and grow alongside other like-minded professionals.
                 </p>
                 <a href="https://www.linkedin.com/in/reshawnlofters/" target="_blank">
-                    <button class="linkedin-button">LINKEDIN <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                    <button class="linkedin-btn">LINKEDIN <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
                 </a>
             </div>
         </div>
@@ -142,11 +140,12 @@
                         <i class="devicon-javascript-plain colored"></i>
                     </div>
                     <div>
-                        <button class="view-live-button">VIEW LIVE</button>
-                        <button class="code-button"> CODE <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                        <button class="view-live-btn">VIEW LIVE</button>
+                        <button class="code-btn"> CODE <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
                     </div>
                 </div>
             </div>
+
             <div class="project-container">
                 <img src="images/Project 2.jpg" alt="project-2-image">
                 <div class="project-descr-container">
@@ -164,10 +163,10 @@
                     </div>
                     <div>
                         <a href="index.html">
-                            <button class="home-button">HOME</button>
+                            <button class="home-btn">HOME</button>
                         </a>
                         <a href="https://github.com/reshawnlofters/personal-website" target="_blank">
-                            <button class="code-button">CODE <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                            <button class="code-btn">CODE <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
                         </a>
                     </div>
                 </div>
@@ -193,6 +192,7 @@
                                 <label for="email">Email</label>
                             </div>
                         </div>
+
                         <div class="input-group">
                             <input type="text" name="user-subject" id="subject" required>
                             <label for="subject">Subject</label>
@@ -208,7 +208,7 @@
                             </div>
                         </div>
                         <p class="form-submit-message" id="formSubmitMessage"></p>
-                        <button class="form-submit-button" type="submit">SUBMIT <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                        <button class="form-submit-btn" type="submit">SUBMIT <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
                     </form>
                 </div>
             </div>

@@ -45,14 +45,14 @@
         padding-bottom: 10px;
     }
 
-    .contact-me-button,
-    .resume-button
+    .contact-me-btn,
+    .resume-btn
     {
         width: 160px !important;
         margin: 0 !important;
     }
 
-    .contact-me-button
+    .contact-me-btn
     {
         margin-right: 18px !important;
     }
@@ -274,13 +274,13 @@
         font-size: 34px !important;
     }
 
-    .contact-me-button,
-    .resume-button
+    .contact-me-btn,
+    .resume-btn
     {
         width: 140px !important;
     }
 
-    .contact-me-button
+    .contact-me-btn
     {
         margin-right: 12px !important;
     }

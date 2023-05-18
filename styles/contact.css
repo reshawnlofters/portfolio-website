@@ -87,7 +87,7 @@ textarea:valid~label
     flex-basis: 48%;
 }
 
-.form-submit-button
+.form-submit-btn
 {
     background-color: rgb(22, 164, 72);
     border: 1px solid rgb(22, 164, 72);
