@@ -28,12 +28,6 @@ nav
     color: rgb(30, 215, 96);
 }
 
-/* .nav-menu
-{
-    /* flex: 1; */
-    /* text-align: right;
-} */
-
 .nav-menu ul li
 {
     color: white;
@@ -43,13 +37,6 @@ nav
     position: relative;
     padding: 8px 12px;
 }
-
-/* .nav-menu ul li a
-{
-    font-size: 16px;
-    color: white;
-    letter-spacing: 1px;
-} */
 
 .nav-menu ul li::after
 {

@@ -6,8 +6,8 @@ let navMenu = document.getElementById("navMenu");
     const contactForm = document.getElementById("contactForm"),
     contactMessage = document.getElementById("formSubmitMessage")
 
-// function to open nav menu
-function openMenu()
+// function to show nav menu
+function showMenu()
 {
     navMenu.style.right = "0";
 }
