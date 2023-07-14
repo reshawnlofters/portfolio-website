@@ -1,24 +1,26 @@
 // variables
 let navMenu = document.getElementById("navMenu");
     inputContainer = document.querySelector(".form-textarea-container"),
-    textarea = inputContainer.querySelector("textarea"),
-    currentNumber = inputContainer.querySelector(".current-number");
-    const contactForm = document.getElementById("contactForm"),
+    textarea = document.getElementById("messageFeild");
+    currentNumber = document.querySelector(".current-number");
+    contactForm = document.getElementById("contactForm"),
     contactMessage = document.getElementById("formSubmitMessage")
+    emailField = document.getElementById("emailFeild");
+    emailErrorMessage = document.getElementById("emailErrorMessage");
 
-// function to show nav menu
+// function to show the navbar menu
 function showMenu()
 {
     navMenu.style.right = "0";
 }
 
-// function to close nav menu
+// function to close the navbar menu
 function closeMenu()
 {
     navMenu.style.right = "-200px";
 }
 
-// track the number of char inputted into textarea
+// count the number of textarea characters
 textarea.addEventListener("keyup", () =>
 {
     let characterLength = textarea.value.length;
@@ -33,7 +35,13 @@ textarea.addEventListener("keyup", () =>
         : inputContainer.classList.remove("error");
 })
 
-// send email when contact form is submitted
+// function to reset textarea character counter
+function resetCharacterCounter()
+{
+    currentNumber.innerHTML = "0";
+}
+
+// send an email when the contact form is submitted
 const sendEmail = (e) =>
 {
     e.preventDefault()
@@ -45,7 +53,7 @@ const sendEmail = (e) =>
             // display success message
             contactMessage.textContent = "Message sent successfully"
 
-            // remove message after five seconds
+            // remove success message after a period
             setTimeout(() =>
             {
                 contactMessage.textContent = ""
@@ -64,7 +72,7 @@ const sendEmail = (e) =>
 
 contactForm.addEventListener("submit", sendEmail)
 
-// auto update copyright notice year
+// update copyright notice year
 const yearSpan = document.querySelector("#currentYear");
 yearSpan.innerText = new Date().getFullYear();
 
@@ -84,11 +92,40 @@ document.addEventListener("scroll", () =>
     }
 })
 
-// role heading typing effect
-var typingEffect = new Typed(".multi-text",
+// set homepage role heading typing effect
+let typingEffect = new Typed(".multi-text",
 {
     strings: ["Developer", "Enthusiast"],
     typeSpeed: 80,
     backSpeed: 80,
     loop: true
 })
+
+// function to determine if user email is valid
+function validateEmail()
+{
+    if (!emailField.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/))
+    {
+        // display error message
+        emailErrorMessage.innerHTML = "Please enter a valid email";
+        
+        return false;
+    }
+
+    // remove error message
+    emailErrorMessage.innerHTML = "";
+
+    return true;
+}
+
+// determine if user email is valid before submitting contact form
+document.getElementById("contactForm").addEventListener("submit", function(event)
+{
+    if (!validateEmail())
+    {
+        // prevent form submission
+        event.preventDefault();
+
+        return false;
+    }
+});

@@ -156,7 +156,7 @@
                 <div class="project-descr-container">
                     <h3 class="project-title">Personal Website</h3>
                     <p>
-                        Developed to showcase my story, skills, experiences, projects, and passion for technology.
+                        Developed to showcase my skills, experiences, projects, and passion for technology.
                     </p><hr/>
                     <div class="project-tech-container">
                         <i class="devicon-html5-plain colored"></i>
@@ -185,27 +185,27 @@
             <div class="contact-grid">
                 <span class="contact-info-container"></span>
                 <div class="contact-form-container">
-                    <form action="" class="contact-form" id="contactForm">
+                    <form action="" class="contact-form" id="contactForm" onsubmit="resetCharacterCounter()">
                         <div class="name-email-row">
                             <div class="input-group">
-                                <input type="text" name="user-name" id="name" required>
-                                <label for="name">Name</label>
+                                <input type="text" name="name-feild" id="nameFeild" required>
+                                <label for="name-feild">Name</label>
                             </div>
                             <div class="input-group">
-                                <input type="text" name="user-email" id="email" required>
-                                <label for="email">Email</label>
+                                <input type="email" name="email-feild" id="emailFeild" spellcheck="false" onkeyup="validateEmail()" required>
+                                <label for="email-feild">Email</label>
+                                <span id="emailErrorMessage"></span>
                             </div>
                         </div>
-
                         <div class="input-group">
-                            <input type="text" name="user-subject" id="subject" required>
-                            <label for="subject">Subject</label>
+                            <input type="text" name="subject-feild" id="subjectFeild" required>
+                            <label for="subject-feild">Subject</label>
                         </div>
                         <div class="input-group">
                             <div class="form-textarea-container">
-                                <textarea name="user-message" id="message" rows="7" required></textarea>
-                                <label for="message">Message</label>
-                                <div class="form-textarea-char-counter">
+                                <textarea name="message-feild" id="messageFeild" rows="7" required></textarea>
+                                <label for="message-feild">Message</label>
+                                <div class="char-counter">
                                     <span class="current-number">0</span>
                                     <span class="limit-number">/1000</span>
                                 </div>

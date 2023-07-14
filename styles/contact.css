@@ -67,6 +67,17 @@ input, textarea
     cursor: text;
 }
 
+.input-group label {
+    height: 100%;
+    font-size: 15px;
+    color: rgb(82, 82, 82);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 14px;
+    transition: 0.2s;
+}
+
 input:focus~label,
 input:valid~label,
 textarea:focus~label,
@@ -87,13 +98,22 @@ textarea:valid~label
     flex-basis: 48%;
 }
 
+#emailErrorMessage
+{
+    font-size: 14px;
+    color: red;
+    top: 100%;
+    left: 2px;
+    position: absolute;
+}
+
 .form-submit-btn
 {
     background-color: rgb(22, 164, 72);
     border: 1px solid rgb(22, 164, 72);
 }
 
-.form-textarea-char-counter
+.char-counter
 {
     display: flex;
     justify-content: flex-end;
@@ -101,7 +121,7 @@ textarea:valid~label
     padding-top: 10px;
 }
 
-.active .form-textarea-char-counter
+.active .char-counter
 {
     display: flex;
     justify-content: flex-end;
@@ -117,7 +137,7 @@ textarea:valid~label
     margin-bottom: 16px;
 }
 
-.form-textarea-char-counter
+.char-counter
 {
     color: rgb(82, 82, 82);
 }
