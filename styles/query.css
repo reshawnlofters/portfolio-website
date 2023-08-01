@@ -157,6 +157,17 @@
     {
         width: 650px;
     }
+    
+    .form-field
+    {
+        margin-bottom: 50px;
+    }
+
+    .name-field-error-message
+    {
+        top: 78px;
+    }
+
 }
 
 @media(max-width: 800px)
@@ -213,16 +224,6 @@
     }
 }
 
-
-@media(max-width: 675px)
-{
-    /* Contact */
-    .contact-form-container
-    {
-        width: 450px;
-    }
-}
-
 @media(max-width: 675px)
 {
     /* Skills */
@@ -235,6 +236,17 @@
     .skill-icon-container div
     {
         width: 255px !important;
+    }
+
+    /* Contact */
+    .contact-form-container
+    {
+        width: 450px;
+    }
+
+    .form-submit-btn
+    {
+        margin-top: 24px;
     }
 }
 
@@ -303,6 +315,26 @@
     {
         width: 350px;
         padding: 35px;
+    }
+
+    .form-field
+    {
+        margin-bottom: 65px;
+    }
+
+    .subject-field-error-message
+    {
+        top: 78px;
+    }
+
+    .message-field-error-message
+    {
+        width: 65%;
+    }
+
+    .form-submit-btn
+    {
+        margin-top: 8px;
     }
 
     /* Footer */
@@ -388,6 +420,11 @@
     {
         width: 320px;
         padding: 32px;
+    }
+
+    .form-submit-btn
+    {
+        margin-top: 24px;
     }
 
     /* Footer */
