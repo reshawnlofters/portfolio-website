@@ -4,31 +4,21 @@ let contactForm = document.getElementById('contactForm'),
     emailField = document.getElementById('emailField'),
     subjectField = document.getElementById('subjectField'),
     messageField = document.getElementById('messageField'),
-    currentNumber = document.querySelector('.current-number'),
-    formSubmitMessage = document.getElementById('formSubmitMessage');
-
+    formSubmitMessage = document.getElementById('formSubmitMessage'),
+    currentNumber = document.querySelector('.current-number');
 
 // check name field
 const checkName = () =>
 {
+    // variables
     let valid = false;
     const name = nameField.value.trim();
 
-    if (name === '')
-    {
-        displayError(nameField, 'Name cannot be blank.');
-    }
-    
-    else if (name.length < 3 || name.length > 25)
-    {
-        displayError(nameField, 'Name must be between 3 and 25 characters.')
-    }
-
-    else
-    {
-        displaySuccess(nameField);
-        valid = true;
-    }
+    name === ''
+        ? displayError(nameField, 'Name cannot be blank.')
+        : name.length < 3 || name.length > 25
+        ? displayError(nameField, 'Name must be between 3 and 25 characters.')
+        : (displaySuccess(nameField), valid = true);
 
     return valid;
 };
@@ -36,24 +26,15 @@ const checkName = () =>
 // check email field
 const checkEmail = () =>
 {
+    // variables
     let valid = false;
     const email = emailField.value.trim();
 
-    if (email === '')
-    {
-        displayError(emailField, 'Email cannot be blank.');
-    } 
-    
-    else if (!isEmailValid(email))
-    {
-        displayError(emailField, 'Email is not valid.')
-    } 
-    
-    else
-    {
-        displaySuccess(emailField);
-        valid = true;
-    }
+    email === ''
+        ? displayError(emailField, 'Email cannot be blank.')
+        : !isEmailValid(email)
+        ? displayError(emailField, 'Email is not valid.')
+        : (displaySuccess(emailField), valid = true);
 
     return valid;
 };
@@ -61,24 +42,15 @@ const checkEmail = () =>
 // check subject field
 const checkSubject = () =>
 {
+    // variables
     let valid = false;
     const subject = subjectField.value.trim();
 
-    if (subject === '')
-    {
-        displayError(subjectField, 'Subject cannot be blank.');
-    } 
-    
-    else if (subject.length < 3 || subject.length > 25)
-    {
-        displayError(subjectField, 'Subject must be between 3 and 25 characters.')
-    }
-    
-    else
-    {
-        displaySuccess(subjectField);
-        valid = true;
-    }
+    subject === ''
+        ? displayError(subjectField, 'Subject cannot be blank.')
+        : subject.length < 3 || subject.length > 25
+        ? displayError(subjectField, 'Subject must be between 3 and 25 characters.')
+        : (displaySuccess(subjectField), valid = true);
     
     return valid;
 }
@@ -86,35 +58,26 @@ const checkSubject = () =>
 // check message field
 const checkMessage = () =>
 {
+    // variables
     let valid = false;
     const message = messageField.value.trim();
 
-    if (message === '')
-    {
-        displayError(messageField, 'Message cannot be blank.');
-    }
-    
-    else if (message.length < 8 || message.length > 1000)
-    {
-        displayError(messageField, 'Message must be between 8 and 1000 characters.');
-    }
-    
-    else
-    {
-        displaySuccess(messageField);
-        valid = true;
-    }
+    message === ''
+        ? displayError(messageField, 'Message cannot be blank.')
+        : message.length < 8 || message.length > 1000
+        ? displayError(messageField, 'Message must be between 8 and 1000 characters.')
+        : (displaySuccess(messageField), valid = true);
 
     return valid;
 };
 
-// function to determine if email is valid
+// function to determine if user email is valid
 const isEmailValid = (emailField) =>
 {
     return /^(([^<>()\[\]\\.,;:\s@']+(\.[^<>()\[\]\\.,;:\s@']+)*)|('.+'))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(emailField);
 };
 
-// function to reset form error state
+// function to reset the form error state
 function resetFormValidationState()
 {
     // get the form-field element
@@ -128,7 +91,7 @@ function resetFormValidationState()
     formField.classList.remove('error');
 }
 
-// function to display error
+// function to display error state
 const displayError = (input, message) =>
 {
     // get the form-field element
@@ -142,17 +105,17 @@ const displayError = (input, message) =>
     const error = formField.querySelector('small');
     error.textContent = message;
 
-    // clear form validation state if user retypes
+    // clear the form validation state on user input
     input.addEventListener('input', resetFormValidationState);
 };
 
-// function to display success
+// function to display success state
 const displaySuccess = (input) =>
 {
     // get the form-field element
     const formField = input.parentElement;
 
-    // remove the error class
+    // add the success class
     formField.classList.remove('error');
     formField.classList.add('success');
 
@@ -160,11 +123,11 @@ const displaySuccess = (input) =>
     const error = formField.querySelector('small');
     error.textContent = '';
 
-    // clear form validation state if user retypes
+    // clear form validation state on user input
     input.addEventListener('input', resetFormValidationState);
 }
 
-// function to delay form feedback
+// function to delay form validation feedback
 const delayFeedback = (fn, delay = 500) =>
 {
     let timeoutId;
@@ -185,7 +148,7 @@ const delayFeedback = (fn, delay = 500) =>
     };
 };
 
-// event listener to provide instant form feedback
+// event listener to provide immediate form validation feedback
 contactForm.addEventListener('input', delayFeedback(function (e)
 {
     switch (e.target.id)
@@ -208,18 +171,18 @@ contactForm.addEventListener('input', delayFeedback(function (e)
     }
 }));
 
-// function to reset form field borders on submit
+// function to reset the form field borders on submit
 function resetFormFieldBorders()
 {
     const formFields = document.querySelectorAll('.form-field');
   
     formFields.forEach((formField) =>
     {
-      formField.classList.remove('success', 'error');
+        formField.classList.remove('success', 'error');
     });
 }
 
-// event listener to submit the form if valid
+// event listener to submit the form to email if valid
 contactForm.addEventListener('submit', function (e)
 {
     // prevent form submission
@@ -262,12 +225,13 @@ contactForm.addEventListener('submit', function (e)
     }
 });
 
-// function to update the message feild character count
+// function to update the message field character count
 function updateMessageCharacterCount()
 {
     let charLength = messageField.value.length;
     currentNumber.innerHTML = charLength;
   
+    // update the validation state based on inputted characters
     charLength > 0
         ? messageField.classList.add('active')
         : messageField.classList.remove('active');

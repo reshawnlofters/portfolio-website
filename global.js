@@ -18,13 +18,9 @@ document.addEventListener('scroll', () =>
 {
     const header = document.querySelector('header');
 
-    if (window.scrollY > 0)
-    {
-        header.classList.add('scrolled');
-    } else
-    {
-        header.classList.remove('scrolled');
-    }
+    window.scrollY > 0
+        ? header.classList.add('scrolled')
+        : header.classList.remove('scrolled');
 })
 
 // display the homepage typing effect
@@ -37,5 +33,5 @@ let typingEffect = new Typed('.multi-text',
 })
 
 // update the copyright notice year
-const yearSpan = document.querySelector('#currentYear');
-yearSpan.innerText = new Date().getFullYear();
+const copyrightNoticeYear = document.getElementById('currentYear');
+copyrightNoticeYear.innerText = new Date().getFullYear();
