@@ -78,11 +78,11 @@
         font-size: 24px;
     }
 
-    .project-descr-container {
+    .project-info-container {
         margin: 46px 0 20px 0;
     }
 
-    .project-descr-container p {
+    .project-info-container p {
         font-size: 16px;
     }
 
@@ -248,7 +248,7 @@
         border-radius: 10px;
     }
 
-    .project-descr-container p {
+    .project-info-container p {
         width: 80%;
     }
 
@@ -330,7 +330,7 @@
         border-radius: 10px;
     }
 
-    .project-descr-container p {
+    .project-info-container p {
         font-size: 15px;
         width: 70%;
     }
