@@ -1,5 +1,4 @@
-.header
-{
+.header {
     width: 100%;
     position: fixed;
     top: 0;
@@ -7,8 +6,7 @@
     transition: 0.3s ease-in-out;
 }
 
-nav
-{
+nav {
     height: 90px;
     display: flex;
     justify-content: space-between;
@@ -16,20 +14,17 @@ nav
     padding: 0 6%;
 }
 
-.nav-logo
-{
+.nav-logo {
     font-size: 30px;
     color: white;
     font-weight: 700;
 }
 
-.nav-logo span
-{
+.nav-logo span {
     color: rgb(30, 215, 96);
 }
 
-.nav-menu ul li
-{
+.nav-menu ul li {
     color: white;
     font-size: 16px;
     letter-spacing: 1.5px;
@@ -38,8 +33,7 @@ nav
     padding: 8px 12px;
 }
 
-.nav-menu ul li::after
-{
+.nav-menu ul li::after {
     height: 2px;
     width: 0;
     background: rgb(22, 164, 72);
@@ -49,19 +43,16 @@ nav
     transition: 0.5s;
 }
 
-.nav-menu ul li:hover::after
-{
+.nav-menu ul li:hover::after {
     width: 100%;
 }
 
-header.scrolled
-{
+header.scrolled {
     background-color: white;
     opacity: 0.98;
 }
 
 header.scrolled .nav-logo,
-header.scrolled .nav-menu ul li
-{
+header.scrolled .nav-menu ul li {
     color: black;
 }

@@ -1,12 +1,10 @@
-.footer
-{
+.footer {
     width: 100%;
     color: white;
     position: relative;
 }
 
-.footer .section-container
-{
+.footer .section-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,19 +12,16 @@
     padding: 26px 6%;
 }
 
-.footer .name-heading
-{
+.footer .name-heading {
     font-size: 23px;
     padding-bottom: 6px;
 }
 
-.footer .role-heading
-{
+.footer .role-heading {
     font-size: 14px;
     margin: 0;
 }
 
-.copyright-notice
-{
+.copyright-notice {
     font-size: 14px;
 }

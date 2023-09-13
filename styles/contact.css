@@ -1,11 +1,9 @@
-.contact
-{
+.contact {
     width: 100%;
     background-color: rgb(234, 237, 242);
 }
 
-.contact .section-container
-{
+.contact .section-container {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -14,21 +12,18 @@
     margin: auto;
 }
 
-.contact-grid
-{
+.contact-grid {
     display: grid;
     grid-template-columns: 240px 750px;
     gap: 20px;
 }
 
-.contact-info-container
-{
+.contact-info-container {
     background-color: black;
     border-radius: 10px;
 }
 
-.contact-form-container
-{
+.contact-form-container {
     background-color: white;
     border-radius: 10px;
     padding: 60px;
@@ -36,22 +31,19 @@
     rgba(0, 0, 0, 0.06) 0 2px 4px -1px;
 }
 
-.form-field
-{
+.form-field {
     position: relative;
     margin-bottom: 40px;
 }
 
-.form-field label
-{
+.form-field label {
     font-size: 15px;
     color: rgb(82, 82, 82);
     display: block;
     padding-bottom: 5px;
 }
 
-input, textarea
-{
+input, textarea {
     width: 100%;
     font-size: 15px;
     border: 1px solid rgba(25, 27, 19, 0.2);
@@ -61,19 +53,16 @@ input, textarea
     padding: 10px;
 }
 
-.name-email-row
-{
+.name-email-row {
     display: flex;
     justify-content: space-between;
 }
 
-.name-email-row .form-field
-{
+.name-email-row .form-field {
     flex-basis: 48%;
 }
 
-.form-field small
-{
+.form-field small {
 	color: #e74c3c;
 	bottom: -25px;
     left: 0;
@@ -81,30 +70,25 @@ input, textarea
 	position: absolute;
 }
 
-.form-field.error small
-{
+.form-field.error small {
 	visibility: visible;
 }
 
 .form-field.error input,
-.error textarea
-{
+.error textarea {
     border-color: #e74c3c;
 }
 
 .form-field.success input,
-.success textarea
-{
+.success textarea {
 	border-color: #2ecc71;
 }
 
-.message-field-error-message
-{
+.message-field-error-message {
     top: 216px;
 }
 
-.message-field-char-counter
-{
+.message-field-char-counter {
     font-size: 15px;
     color: rgb(82, 82, 82);
     position: absolute;
@@ -112,14 +96,12 @@ input, textarea
     right: 0;
 }
 
-.form-submit-btn
-{
+.form-submit-btn {
     background-color: rgb(22, 164, 72);
     border: 1px solid rgb(22, 164, 72);
 }
 
-.form-submit-message
-{
+.form-submit-message {
     font-size: 15px;
     color: rgb(82, 82, 82);
     margin-bottom: 16px;

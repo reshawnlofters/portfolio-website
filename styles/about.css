@@ -1,11 +1,9 @@
-.about
-{
+.about {
     width: 100%;
     position: relative;
 }
 
-.about .section-container
-{
+.about .section-container {
     width: 80%;
     display: flex;
     justify-content: center;
@@ -14,22 +12,19 @@
     margin: auto;
 }
 
-.about .section-container div
-{
+.about .section-container div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.about .section-container p
-{
+.about .section-container p {
     max-width: 600px;
     color: rgb(82, 82, 82);
     margin-bottom: 50px;
 }
 
-.linkedin-btn
-{
+.linkedin-btn {
     background-color: rgb(22, 164, 72);
     border: 1px solid rgb(22, 164, 72);
 }

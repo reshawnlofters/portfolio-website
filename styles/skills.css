@@ -1,12 +1,10 @@
-.skills
-{
+.skills {
     width: 100%;
     background-color: rgb(234, 237, 242);
     position: relative;
 }
 
-.skills .section-container
-{
+.skills .section-container {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -15,15 +13,13 @@
     margin: auto;
 }
 
-.skill-icon-container
-{
+.skill-icon-container {
     display: grid;
     grid-template-columns: 250px 250px 250px;
     gap: 30px;
 }
 
-.skill-icon-container div
-{
+.skill-icon-container div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,19 +32,16 @@
     transition: 0.3s;
 }
 
-.skill-icon-container div:hover
-{
+.skill-icon-container div:hover {
     opacity: 0.7;
     margin: -10px 0 10px 0;
 }
 
-.skill-icon-container label
-{
+.skill-icon-container label {
     font-size: 18px;
 }
 
-.skill-icon-container div hr
-{
+.skill-icon-container div hr {
     width: 34px;
     margin: 18px 0 12px 0;
 }
