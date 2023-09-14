@@ -34,7 +34,7 @@
                 Reshawn<span>&#46;</span>
             </a>
             <div class="nav-menu" id="navMenu">
-                <i class="fa-sharp fa-solid fa-xmark" id="close-menu-icon" onclick="closeNavMenu()"></i>
+                <i class="fa-sharp fa-solid fa-xmark" id="closeNavMenuIcon"></i>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -43,7 +43,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <i class="fa-sharp fa-solid fa-bars" id="display-menu-icon" onclick="openNavMenu()"></i>
+            <i class="fa-sharp fa-solid fa-bars" id="openNavMenuIcon"></i>
         </nav>
     </header>
 
@@ -192,7 +192,7 @@
             <div class="contact-grid">
                 <span class="contact-info-container"></span>
                 <div class="contact-form-container">
-                    <form action="" class="contact-form" id="contactForm" onsubmit="resetMessageCharacterCount()" novalidate>
+                    <form action="" class="contact-form" id="contactForm" novalidate>
                         <div class="name-email-row">
                             <div class="form-field">
                                 <label for="name-field">Name:</label>
@@ -215,8 +215,8 @@
                             <textarea name="message-field" id="messageField" rows="7"></textarea>
                             <small class="message-field-error-message"></small>
                             <div class="message-field-char-counter">
-                                <span class="current-number">0</span>
-                                <span class="limit-number">/1000</span>
+                                <span class="message-field-char-count">0</span>
+                                <span class="message-field-limit-number">/1000</span>
                             </div>
                         </div>
                         <p class="form-submit-message" id="formSubmitMessage"></p>

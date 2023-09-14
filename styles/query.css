@@ -52,7 +52,7 @@
     }
 
     .about .section-container p {
-        width: 90%;
+        width: 92%;
     }
 
     /* Skills */
@@ -178,7 +178,7 @@
         color: white;
     }
 
-    header.scrolled #show-menu-icon {
+    header.scrolled #openNavMenuIcon {
         color: black;
     }
 }
@@ -213,12 +213,6 @@
 
 @media (max-width: 500px) {
     /* Global */
-    .about .section-container,
-    .skills .section-container,
-    .contact .section-container {
-        padding: 70px 0;
-    }
-
     .section-title {
         font-size: 34px !important;
     }
@@ -297,7 +291,7 @@
         font-size: 26px !important;
     }
 
-    #show-menu-icon {
+    #openNavMenuIcon {
         font-size: 23px;
     }
 

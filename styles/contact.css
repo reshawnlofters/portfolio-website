@@ -85,7 +85,7 @@ input, textarea {
 }
 
 .message-field-error-message {
-    top: 216px;
+    top: 216px !important;
 }
 
 .message-field-char-counter {

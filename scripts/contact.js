@@ -1,6 +1,6 @@
 // variables
 const contactForm = document.getElementById('contactForm');
-const messageFieldCharCount = document.querySelector('.current-number');
+const messageFieldCharCount = document.querySelector('.message-field-char-count');
 
 /**
  * This function validates the name input field.
