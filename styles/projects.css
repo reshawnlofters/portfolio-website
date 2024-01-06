@@ -1,6 +1,7 @@
 .projects {
-    width: 100%;
     position: relative;
+    background-color: #f9f8f7;
+    width: 100%;
 }
 
 .projects .section-container {
@@ -24,23 +25,21 @@
     margin-bottom: 14px;
 }
 
-.project-container img,
+.project-img,
 .project-info-container {
     width: 500px;
 }
 
-.project-container img {
+.project-img {
     height: 270px;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0 2px 4px -1px;
-    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px 0px, rgba(0, 0, 0, 0.04) 0px 2px 8px 0px;
+    cursor: pointer;
 }
 
-.project-container img:hover {
-    opacity: 0.7;
-    margin: 0 10px 0 -10px;
+.project-img:hover {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 6px 16px 0px, rgba(0, 0, 0, 0.04) 0px 0px 6px 0px;
 }
 
 .project-info-container {
@@ -56,8 +55,13 @@
     margin-bottom: 14px;
     margin-left: 30px;
 }
+.project-tools-container img {
+    height: 34px;
+}
 
 .project-tools-container {
+    display: flex;
+    align-items: center;
     font-size: 34px;
     margin-bottom: 14px;
 }
@@ -66,16 +70,10 @@
     width: 135px;
 }
 
-.live-demo-btn,
-.home-btn {
-    background-color: rgb(22, 164, 72);
-    border: 1px solid rgb(22, 164, 72);
-    margin-right: 20px;
-}
-
-.code-btn {
+.code-button {
     background-color: black;
     border: 1px solid black;
+    margin-left: 20px;
 }
 
 .project-info-container hr {

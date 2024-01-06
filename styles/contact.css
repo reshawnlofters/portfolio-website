@@ -12,23 +12,13 @@
     margin: auto;
 }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: 240px 750px;
-    gap: 20px;
-}
-
-.contact-info-container {
-    background-color: black;
-    border-radius: 10px;
-}
-
 .contact-form-container {
     background-color: white;
+    max-width: 750px;
+    width: 100%;
     border-radius: 10px;
-    padding: 60px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0 2px 4px -1px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px 0px, rgba(0, 0, 0, 0.04) 0px 2px 8px 0px;
+    padding: 50px;
 }
 
 .form-field {
@@ -37,13 +27,14 @@
 }
 
 .form-field label {
+    display: block;
     font-size: 15px;
     color: rgb(82, 82, 82);
-    display: block;
     padding-bottom: 5px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     font-size: 15px;
     border: 1px solid rgba(25, 27, 19, 0.2);
@@ -63,15 +54,15 @@ input, textarea {
 }
 
 .form-field small {
-	color: #e74c3c;
-	bottom: -25px;
+    position: absolute;
+    color: #e74c3c;
     left: 0;
-	visibility: hidden;
-	position: absolute;
+    bottom: -25px;
+    visibility: hidden;
 }
 
 .form-field.error small {
-	visibility: visible;
+    visibility: visible;
 }
 
 .form-field.error input,
@@ -81,7 +72,7 @@ input, textarea {
 
 .form-field.success input,
 .success textarea {
-	border-color: #2ecc71;
+    border-color: #2ecc71;
 }
 
 .message-field-error-message {
@@ -89,16 +80,12 @@ input, textarea {
 }
 
 .message-field-char-counter {
-    font-size: 15px;
-    color: rgb(82, 82, 82);
     position: absolute;
-    bottom: -20px;
+    color: rgb(82, 82, 82);
+    font-size: 15px;
     right: 0;
-}
-
-.form-submit-btn {
-    background-color: rgb(22, 164, 72);
-    border: 1px solid rgb(22, 164, 72);
+    bottom: -20px;
+    margin-left: 10px;
 }
 
 .form-submit-message {

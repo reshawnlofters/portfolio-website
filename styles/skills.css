@@ -27,8 +27,7 @@
     border-radius: 10px;
     color: rgb(82, 82, 82);
     padding: 40px 60px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0 2px 4px -1px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px, rgba(0, 0, 0, 0.06) 0 2px 4px -1px;
     transition: 0.3s;
 }
 

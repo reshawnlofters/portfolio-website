@@ -49,13 +49,11 @@
     margin-bottom: 50px;
 }
 
-.contact-me-btn {
-    background-color: rgb(22, 164, 72);
-    border: 1px solid rgb(22, 164, 72);
+.contact-me-button {
     margin-right: 20px;
 }
 
-.resume-btn {
+.resume-button {
     background-color: black;
     border: 1px solid white;
 }

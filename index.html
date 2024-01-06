@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reshawn Lofters</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.webp">
+    <link rel="icon" type="x-icon" href="images/website-logo.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/query.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/about.css">
@@ -19,15 +20,13 @@
     <link rel="stylesheet" href="styles/projects.css">
     <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/query.css">
     <script src="https://kit.fontawesome.com/9af645afab.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="scripts/global.js" defer></script>
+    <script src="scripts/shared/general.js" defer></script>
     <script src="scripts/contact.js" defer></script>
 </head>
 </body>
-    <!-- Header -->
     <header class="header" id="header">
         <nav>
             <a href="#home" class="nav-logo">
@@ -47,7 +46,6 @@
         </nav>
     </header>
 
-    <!-- Home -->
     <section class="home" id="home">
         <div class="section-container">
             <div>
@@ -55,15 +53,15 @@
                 <h2 class="name-heading">Hi&#44; I&#39;m <span>Reshawn</span></h2>
                 <h2 class="role-heading">I am a Software <br><span class="multi-text">Developer</span></h2>
                 <p>
-                    I have a passion for software engineering and using technology
-                    to solve complex problems that can benefit others.
+                    I am passionate about software engineering and using technology
+                    to solve real-world problems.
                 </p>
                 <div>
                     <a href="#contact">
-                        <button class="contact-me-btn">CONTACT ME</button>
+                        <button class="contact-me-button button-primary">Contact Me</button>
                     </a>
                     <a href="images/Reshawn Lofters Resume.pdf" target="_blank" download>
-                        <button class="resume-btn">RESUME <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                        <button class="resume-button">Resume <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
                     </a>
                 </div>
             </div>
@@ -71,75 +69,70 @@
         </div>
     </section>
 
-    <!-- About -->
     <section class="about" id="about">
         <div class="section-container">
             <img src="images/astronaut-flying-with-balloon.webp" alt="astronaut-riding-on-rocket">
             <div>
                 <h1 class="section-title">About Me</h1><hr/>
                 <p>
-                    I am a second-year computer science student at Ontario Tech University,
-                    specializing in software engineering.
-                    My passion for programming drives me, and I find exploring the capabilities 
-                    of technology to be motivating.<br><br>
-                    Currently, I am a Data Analyst at Telus International, where I evaluate 
-                    machine learning model outputs for mapping applications. 
-                    In this role, I have honed my analytical skills and attention to detail, 
-                    which I am eager to apply to future software development positions.<br><br>
-                    I am enthusiastic about exploring software development opportunities to collaborate 
-                    with diverse teams, contribute to impactful projects, and promote innovation.
+                    I am a second-year Computer Science student at Ontario Tech University.
+                    My academic journey has equipped me with a solid understanding of data structures,
+                    algorithms, analytical reasoning, and effective communication, honed through work
+                    experiences and projects.<br><br>
+                    I am enthusiastic about exploring summer 2024 internship opportunities to contribute
+                    my technical proficiency and soft skills to innovative projects and collaborate in team
+                    environments. Feel free to reach me using the contact form below.
                 </p>
                 <a href="https://www.linkedin.com/in/reshawnlofters/" target="_blank">
-                    <button class="linkedin-btn">LINKEDIN <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                    <button class="button-primary">Linkedin <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Skills -->
     <section class="skills" id="skills">
         <div class="section-container">
             <h1 class="section-title">Technical Skills</h1><hr/>
             <div class="skill-icon-container">
                 <div>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="cplusplus-icon"><hr/>
-                    <label>C++</label>
-                </div>
-                <div>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python-icon"><hr/>
-                    <label>Python</label>
-                </div>
-                <div>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="java-icon"><hr/>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="java icon"><hr/>
                     <label>Java</label>
                 </div>
                 <div>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="html5-icon"><hr/>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python icon"><hr/>
+                    <label>Python</label>
+                </div>
+                <div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="cplusplus icon"><hr/>
+                    <label>C++</label>
+                </div>
+                <div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="html5 icon"><hr/>
                     <label>HTML5</label>
                 </div>
                 <div>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="css3-icon"><hr/>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="css3 icon"><hr/>
                     <label>CSS3</label>
                 </div>
                 <div>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript-icon"><hr/>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript icon"><hr/>
                     <label>JavaScript</label>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects -->
     <section class="projects" id="projects">
         <div class="section-container">
             <h1 class="section-title">Projects</h1><hr/>
             <div class="project-container">
-                <img src="images/Project 1.jpg" alt="project-1-image">
+                <a href="https://computestore.ca" target="_blank">
+                    <img class="project-img" src="images/project-1-img.png" alt="project image">
+                </a>
                 <div class="project-info-container">
-                    <h3 class="project-title">E-commerce Website</h3>
+                    <h3 class="project-title">Compute (E-commerce Store)</h3>
                     <p>
-                        Designed to enable users to explore, select, and purchase 
-                        premium computer hardware components for building their workstations.
+                        Explore the Compute Store and browse the wide range of tech products and available features.
                     </p><hr/>
                     <div class="project-tools-container">
                         <i class="devicon-html5-plain colored"></i>
@@ -147,37 +140,38 @@
                         <i class="devicon-css3-plain colored"></i>
                         <i class="bi bi-dot"></i>
                         <i class="devicon-javascript-plain colored"></i>
-                        <i class="bi bi-dot"></i>
-                        <i class="devicon-mysql-plain colored"></i>
                     </div>
                     <div>
-                        <button class="live-demo-btn">DEMO SOON</button>
-                        <a href="https://github.com/reshawnlofters/e-commerce-website" target="_blank">
-                            <button class="code-btn">CODE <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                        <a href="https://computestore.ca"  target="_blank">
+                            <button class="demo-button button-primary">Demo</button>
+                        </a>
+                        <a href="https://github.com/reshawnlofters/e-commerce-store" target="_blank">
+                            <button class="code-button">Code <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="project-container">
-                <img src="images/Project 2.jpg" alt="project-2-image">
+                <a href="https://github.com/reshawnlofters/tech-industry-billionaires-analysis/blob/main/tech-industry-billionaires-analysis.ipynb" target="_blank">
+                    <img class="project-img" src="images/project-2-img.jpg" alt="project image">
+                </a>
                 <div class="project-info-container">
-                    <h3 class="project-title">Portfolio Website</h3>
+                    <h3 class="project-title">Tech Billionaires Analysis</h3>
                     <p>
-                        Designed to showcase my skills, experiences, and projects in software development.
+                        Explore the analysis of tech billionaires to gain insights into the trajectory of the tech industry.
                     </p><hr/>
                     <div class="project-tools-container">
-                        <i class="devicon-html5-plain colored"></i>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
                         <i class="bi bi-dot"></i>
-                        <i class="devicon-css3-plain colored"></i>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" />
                         <i class="bi bi-dot"></i>
-                        <i class="devicon-javascript-plain colored"></i>
+                        <img src="images/seaborn-logo.png" alt="seaborn logo">
+                        <i class="bi bi-dot"></i>
+                        <img src="images/matplotlib-logo.png" alt="matplotlib logo">
                     </div>
                     <div>
-                        <a href="index.html">
-                            <button class="home-btn">HOME</button>
-                        </a>
-                        <a href="https://github.com/reshawnlofters/portfolio-website" target="_blank">
-                            <button class="code-btn">CODE <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                        <a href="https://github.com/reshawnlofters/tech-billionaires-analysis/blob/main/tech-billionaires-analysis.ipynb" target="_blank">
+                            <button class="demo-button button-primary">Demo</i></button>
                         </a>
                     </div>
                 </div>
@@ -185,50 +179,46 @@
         </div>
     </section>
 
-    <!-- Contact -->
     <section class="contact" id="contact">
         <div class="section-container">
             <h1 class="section-title">Contact Me</h1><hr/>
-            <div class="contact-grid">
-                <span class="contact-info-container"></span>
-                <div class="contact-form-container">
-                    <form action="" class="contact-form" id="contactForm" novalidate>
-                        <div class="name-email-row">
-                            <div class="form-field">
-                                <label for="name-field">Name:</label>
-                                <input type="text" name="name-field" id="nameField">
-                                <small class="name-field-error-message"></small>
-                            </div>
-                            <div class="form-field">
-                                <label for="email-field">Email:</label>
-                                <input type="email" name="email-field" id="emailField">
-                                <small></small>
-                            </div>
+            <div class="contact-form-container">
+                <form action="" class="contact-form" id="contactForm" novalidate>
+                    <div class="name-email-row">
+                        <div class="form-field">
+                            <label for="name-field">Name</label>
+                            <input type="text" name="name-field" id="nameField">
+                            <small class="name-field-error-message"></small>
                         </div>
                         <div class="form-field">
-                            <label for="subject-field">Subject:</label>
-                            <input type="text" name="subject-field" id="subjectField">
-                            <small class="subject-field-error-message"></small>
+                            <label for="email-field">Email</label>
+                            <input type="email" name="email-field" id="emailField">
+                            <small class="email-field-error-message"></small>
                         </div>
-                        <div class="form-field">
-                            <label for="message-field">Message:</label>
-                            <textarea name="message-field" id="messageField" rows="7"></textarea>
-                            <small class="message-field-error-message"></small>
-                            <div class="message-field-char-counter">
-                                <span class="message-field-char-count">0</span>
-                                <span class="message-field-limit-number">/1000</span>
-                            </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="subject-field">Subject</label>
+                        <input type="text" name="subject-field" id="subjectField">
+                        <small class="subject-field-error-message"></small>
+                    </div>
+                    <div class="form-field">
+                        <label for="message-field">Message</label>
+                        <textarea name="message-field" id="messageField" rows="7"></textarea>
+                        <small class="message-field-error-message"></small>
+                        <div class="message-field-char-counter">
+                            <span class="message-field-char-count">0</span>
+                            <span class="message-field-limit-number">/1000</span>
                         </div>
-                        <p class="form-submit-message" id="formSubmitMessage"></p>
-                        <button class="form-submit-btn" type="submit">SUBMIT <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
-                    </form>
-                </div>
+                    </div>
+                    <p class="form-submit-message" id="formSubmitMessage"></p>
+
+                    <button class="form-submit-button button-primary" type="submit">Submit <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <section class="footer">
+    <footer class="footer">
         <div class="section-container">
             <div>
                 <h1 class="name-heading">
@@ -242,6 +232,6 @@
                 &copy; Reshawn Lofters <span id="currentYear"></span>. All rights reserved.
             </p>
         </div>
-    </section>
+    </footer>
 </body>
 </html>
