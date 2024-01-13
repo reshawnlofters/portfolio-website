@@ -1,19 +1,14 @@
 # Reshawn Lofters - Portfolio Website
 
-Welcome to my portfolio website, a dedicated platform where I showcase my journey and accomplishments in the field of software development.
+## Overview
+Explore my portfolio to learn more about me and preview my software engineering and data science projects.
 
 ## Technologies Used
-HTML5, CSS3, JavaScript (ES6), Git, GitHub
+HTML5, CSS3, JavaScript (ES6), Git
 
-## Website Link
-[www.reshawnlofters.com](https://www.reshawnlofters.com)
+## Getting Started
+To explore my portfolio, simply visit [www.reshawnlofters.com](https://www.reshawnlofters.com).
 
-## Skills
-### Programming Languages
-C++, Python, Java, HTML5, CSS3, JavaScript (ES6)
-
-### Technologies
-Git, GitHub, VS Code
-
-## Contact
-For collaborations, inquiries, or professional discussions, connect with me on [LinkedIn](https://www.linkedin.com/in/reshawnlofters).
+## Developer
+**Reshawn Lofters**
+- LinkedIn: [in/reshawnlofters](https://www.linkedin.com/in/reshawnlofters/)
