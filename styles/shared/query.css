@@ -42,9 +42,9 @@
         margin: 0 !important;
     }
 
-    .contact-me-button {
+    /* .contact-me-button {
         margin-right: 18px !important;
-    }
+    } */
 
     /* About */
     .about .section-container img {
@@ -211,9 +211,9 @@
         width: 140px !important;
     }
 
-    .contact-me-button {
+    /* .contact-me-button {
         margin-right: 12px !important;
-    }
+    } */
 
     .project-info-container p {
         width: 80%;
