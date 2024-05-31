@@ -1,13 +1,13 @@
 footer {
     width: 100%;
-    color: white;
+    color: var(--white);
     position: relative;
 }
 
 footer .section-container {
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: var(--black);
     padding: 26px 6%;
 }
 

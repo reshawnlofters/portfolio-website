@@ -1,3 +1,22 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --custom-white-colour: #f9f8f7;
+    --custom-light-gray-colour: #eaedf2;
+    --custom-dark-gray-colour: #525252;
+    --custom-light-green-colour: #1ed760;
+    --header-border-bottom-colour: #f4f4f4;
+    --button-primary-background-colour: #16a448;
+    --horizontal-rule-colour: #ea4020;
+    --nav-sidebar-background-colour: #202125;
+    --input-border-colour: #191b1333;
+    --valid-input-border-colour: #2ecc71;
+    --invalid-input-border-colour: #e74c3c;
+    --box-shadow-1: rgba(0, 0, 0, 0.1) 0 4px 6px -1px, rgba(0, 0, 0, 0.06) 0 2px 4px -1px;
+    --box-shadow-2: rgba(0, 0, 0, 0.06) 0 2px 8px 0, rgba(0, 0, 0, 0.04) 0 2px 8px 0;
+    --box-shadow-3: rgba(0, 0, 0, 0.08) 0 6px 16px 0, rgba(0, 0, 0, 0.04) 0 0 6px 0;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -24,20 +43,20 @@ a {
 
 button {
     width: 150px;
-    color: white;
+    color: var(--white);
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 2px;
     border-radius: 30px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px, rgba(0, 0, 0, 0.06) 0 2px 4px -1px;
+    box-shadow: var(--box-shadow-1);
     transition: 0.3s;
     padding: 14px 0;
     cursor: pointer;
 }
 
 .button-primary {
-    background-color: rgb(22, 164, 72);
-    border: 1px solid rgb(22, 164, 72);
+    background-color: var(--button-primary-background-colour);
+    border: 1px solid var(--button-primary-background-colour);
 }
 
 button .fa-sharp {
@@ -45,9 +64,9 @@ button .fa-sharp {
 }
 
 button:hover {
-    background-color: white;
+    background-color: var(--white);
     color: black !important;
-    border-color: black;
+    border-color: var(--black);
 }
 
 .home button:active,
@@ -61,14 +80,14 @@ button:hover {
 }
 
 .section-title {
-    color: black;
+    color: var(--black);
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 14px;
 }
 
 hr {
-    background: #ea4020;
+    background-color: var(--horizontal-rule-colour);
     height: 2px;
     width: 70px;
     border: none;
@@ -76,7 +95,7 @@ hr {
 }
 
 nav .fa-sharp {
-    color: white;
+    color: var(--white);
     display: none;
 }
 

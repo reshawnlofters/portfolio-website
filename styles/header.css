@@ -3,7 +3,6 @@
     width: 100%;
     top: 0;
     z-index: 100;
-    border-bottom: 1px solid rgba(25, 25, 25, 0.1);
     transition: 0.3s ease-in-out;
 }
 
@@ -16,19 +15,19 @@ nav {
 }
 
 .nav-menu-logo {
-    color: white;
+    color: var(--white);
     font-size: 30px;
     font-weight: 700;
 }
 
 .nav-menu-logo span {
-    color: rgb(30, 215, 96);
+    color: var(--custom-light-green-colour);
 }
 
 .nav-menu ul li {
     display: inline-block;
     position: relative;
-    color: white;
+    color: var(--white);
     font-size: 16px;
     letter-spacing: 1.5px;
     padding: 8px 12px;
@@ -36,7 +35,7 @@ nav {
 
 .nav-menu ul li::after {
     display: block;
-    background: rgb(22, 164, 72);
+    background-color: var(--custom-light-green-colour);
     height: 2px;
     width: 0;
     content: '';
@@ -49,10 +48,11 @@ nav {
 }
 
 header.scrolled {
-    background-color: white;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--header-border-bottom-colour);
 }
 
 header.scrolled .nav-menu-logo,
 header.scrolled .nav-menu ul li {
-    color: black;
+    color: var(--black);
 }

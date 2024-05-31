@@ -125,7 +125,7 @@
         height: 100vh;
         width: 200px;
         font-size: 40px;
-        background-color: rgba(32, 33, 37, 255);
+        background-color: var(--nav-sidebar-background-colour);
         position: absolute;
         top: 0;
         right: -200px;
@@ -145,11 +145,11 @@
     }
 
     header.scrolled .nav-menu ul li {
-        color: white;
+        color: var(--white);
     }
 
     header.scrolled #openNavMenuIcon {
-        color: black;
+        color: var(--black);
     }
 }
 

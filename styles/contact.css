@@ -1,6 +1,6 @@
 .contact {
     width: 100%;
-    background-color: rgb(234, 237, 242);
+    background-color: var(--custom-light-gray-colour);
 }
 
 .contact .section-container {
@@ -13,11 +13,11 @@
 }
 
 .contact-form-container {
-    background-color: white;
+    background-color: var(--white);
     max-width: 750px;
     width: 100%;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px 0px, rgba(0, 0, 0, 0.04) 0px 2px 8px 0px;
+    box-shadow: var(--box-shadow-2);
     padding: 50px;
 }
 
@@ -29,7 +29,7 @@
 .form-field label {
     display: block;
     font-size: 15px;
-    color: rgb(82, 82, 82);
+    color: var(--custom-dark-gray-colour);
     padding-bottom: 5px;
 }
 
@@ -37,7 +37,7 @@ input,
 textarea {
     width: 100%;
     font-size: 15px;
-    border: 1px solid rgba(25, 27, 19, 0.2);
+    border: 1px solid var(--input-border-colour);
     border-radius: 8px;
     outline: none;
     resize: none;
@@ -55,7 +55,7 @@ textarea {
 
 .form-field small {
     position: absolute;
-    color: #e74c3c;
+    color: var(--invalid-input-border-colour);
     left: 0;
     bottom: -25px;
     visibility: hidden;
@@ -67,12 +67,12 @@ textarea {
 
 .form-field.error input,
 .error textarea {
-    border-color: #e74c3c;
+    border-color: var(--invalid-input-border-colour);
 }
 
 .form-field.success input,
 .success textarea {
-    border-color: #2ecc71;
+    border-color: var(--valid-input-border-colour);
 }
 
 .message-field-error-message {
@@ -81,7 +81,7 @@ textarea {
 
 .message-field-char-counter {
     position: absolute;
-    color: rgb(82, 82, 82);
+    color: var(--custom-dark-gray-colour);
     font-size: 15px;
     right: 0;
     bottom: -20px;
@@ -90,6 +90,6 @@ textarea {
 
 .form-submit-message {
     font-size: 15px;
-    color: rgb(82, 82, 82);
+    color: var(--custom-dark-gray-colour);
     margin-bottom: 16px;
 }

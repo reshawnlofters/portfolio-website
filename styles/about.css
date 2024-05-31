@@ -1,6 +1,6 @@
 .about {
     position: relative;
-    background-color: #f9f8f7;
+    background-color: var(--custom-white-colour);
     width: 100%;
 }
 
@@ -21,6 +21,6 @@
 
 .about .section-container p {
     max-width: 600px;
-    color: rgb(82, 82, 82);
+    color: var(--custom-dark-gray-colour);
     margin-bottom: 50px;
 }

@@ -1,6 +1,6 @@
 .projects {
     position: relative;
-    background-color: #f9f8f7;
+    background-color: var(--custom-white-colour);
     width: 100%;
 }
 
@@ -34,12 +34,12 @@
     height: 270px;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px 0px, rgba(0, 0, 0, 0.04) 0px 2px 8px 0px;
+    box-shadow: var(--box-shadow-2);
     cursor: pointer;
 }
 
 .project-img:hover {
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 6px 16px 0px, rgba(0, 0, 0, 0.04) 0px 0px 6px 0px;
+    box-shadow: var(--box-shadow-3);
 }
 
 .project-info-container {
@@ -51,7 +51,7 @@
 
 .project-info-container p {
     font-size: 15px;
-    color: rgb(82, 82, 82);
+    color: var(--custom-dark-gray-colour);
     margin-bottom: 14px;
     margin-left: 30px;
 }
@@ -71,7 +71,7 @@
 }
 
 .github-button {
-    background-color: black;
+    background-color: var(--black);
     border: 1px solid black;
     margin-left: 20px;
 }
