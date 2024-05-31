@@ -98,8 +98,8 @@
         padding-bottom: 18px;
     }
 
-    .copyright-notice {
-        max-width: 71%;
+    .copyright-notice-container {
+        justify-content: center;
     }
 }
 
@@ -109,6 +109,7 @@
         grid-template-columns: 250px 250px !important;
     }
 
+    /* Contact */
     .form-field {
         margin-bottom: 50px;
     }
@@ -164,6 +165,7 @@
         width: 255px !important;
     }
 
+    /* Footer */
     .form-submit-button {
         margin-top: 24px;
     }
@@ -215,10 +217,12 @@
         margin-right: 12px !important;
     } */
 
+    /* Projects */
     .project-details-container p {
         width: 80%;
     }
 
+    /* Contact */
     .form-field {
         margin-bottom: 65px;
     }
@@ -238,6 +242,14 @@
     /* Footer */
     .footer .section-container {
         padding: 10% 6%;
+    }
+}
+
+@media (max-width: 450px) {
+    /* Projects */
+    .project-title {
+        max-width: 70%;
+        text-align: center;
     }
 }
 
@@ -310,6 +322,6 @@
     }
 
     .copyright-notice {
-        max-width: 75%;
+        max-width: 180px;
     }
 }
