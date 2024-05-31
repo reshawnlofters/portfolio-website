@@ -1,8 +1,16 @@
 const contactForm = document.getElementById('contactForm');
+const nameField = document.getElementById('nameField');
+const emailField = document.getElementById('emailField');
+const subjectField = document.getElementById('subjectField');
+const messageField = document.getElementById('messageField');
 const messageFieldCharCount = document.querySelector('.message-field-char-count');
 
+/**
+ * Validates the name input in the contact form.
+ * @returns {boolean} - True if the name is valid, otherwise false.
+ */
 function validateNameInput() {
-    const name = document.getElementById('nameField').value.trim();
+    const name = nameField.value.trim();
     let valid = false;
 
     if (name === '') {
@@ -17,8 +25,12 @@ function validateNameInput() {
     return valid;
 }
 
+/**
+ * Validates the email input in the contact form.
+ * @returns {boolean} - True if the email is valid, otherwise false.
+ */
 function validateEmailInput() {
-    const email = document.getElementById('emailField').value.trim();
+    const email = emailField.value.trim();
     let valid = false;
 
     if (email === '') {
@@ -33,14 +45,23 @@ function validateEmailInput() {
     return valid;
 }
 
+/**
+ * Validates the email input in the contact form using a regex.
+ * @param {string} email - The email address to validate.
+ * @returns {boolean} - True if the email is valid, otherwise false.
+ */
 function isEmailValid(email) {
     return /^(([^<>()\[\]\\.,;:\s@']+(\.[^<>()\[\]\\.,;:\s@']+)*)|('.+'))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
         email
     );
 }
 
+/**
+ * Validates the subject input in the contact form.
+ * @returns {boolean} - True if the subject is valid, otherwise false.
+ */
 function validateSubjectInput() {
-    const subject = document.getElementById('subjectField').value.trim();
+    const subject = subjectField.value.trim();
     let valid = false;
 
     if (subject === '') {
@@ -55,8 +76,13 @@ function validateSubjectInput() {
     return valid;
 }
 
+
+/**
+ * Validates the message input in the contact form.
+ * @returns {boolean} - True if the message is valid, otherwise false.
+ */
 function validateMessageInput() {
-    const message = document.getElementById('messageField').value.trim();
+    const message = messageField.value.trim();
     let valid = false;
 
     if (message === '') {
@@ -71,48 +97,56 @@ function validateMessageInput() {
     return valid;
 }
 
-// Resets the validation state of a form field
-function resetFormFieldValidationState() {
-    const formField = inputElement.parentElement;
-
-    formField.querySelector('small').innerHTML = ''; // clear the error message
-    formField.classList.remove('error');
-}
-
 /**
- * Adds an 'error' class to a form field for styling, displays an error message,
- * and resets the form validation state on user input.
+ * Adds an 'error' class to a form field with invalid input and displays an error message.
+ * - Resets the form validation state on user input.
  * @param {Element} inputField - The input field that triggered the error.
- * @param {string} message - The error message to be displayed to the user.
+ * @param {string} message - The error message to display.
  */
 function setErrorState(inputField, message) {
     const formField = inputField.parentElement;
 
-    formField.classList.remove('success');
-    formField.classList.add('error');
-    formField.querySelector('small').innerHTML = message;
-    inputField.addEventListener('input', resetFormFieldValidationState);
+    if (formField) {
+        formField.classList.remove('success');
+        formField.classList.add('error');
+        formField.querySelector('small').innerHTML = message;
+        inputField.addEventListener('input', resetFormFieldValidationState);
+    }
 }
 
 /**
- * Adds a 'success' class to a form field for styling, hides an error message, and
- * resets the form validation state on user input.
+ * Adds an 'success' class to a form field with valid input and displays a success message.
+ * - Resets the form validation state on user input.
  * @param {Element} inputField - The input field that triggered the success state.
  */
 function setSuccessState(inputField) {
     const formField = inputField.parentElement;
 
-    formField.classList.remove('error');
-    formField.classList.add('success');
-    formField.querySelector('small').innerHTML = '';
-    inputField.addEventListener('input', resetFormFieldValidationState);
+    if (formField) {
+        formField.classList.remove('error');
+        formField.classList.add('success');
+        formField.querySelector('small').innerHTML = '';
+        inputField.addEventListener('input', resetFormFieldValidationState);
+    }
 }
 
 /**
- * Delays form field validation feedback to avoid immediate changes.
+ * Resets the validation state of a form field.
+ */
+function resetFormFieldValidationState(inputField) {
+    const formField = inputField.parentElement;
+
+    if (formField) {
+        formField.querySelector('small').innerHTML = ''; // Clear error message
+        formField.classList.remove('error');
+    }
+}
+
+/**
+ * Adds a delay to form field validation feedback for consistency.
  * @param {Function} callback - The function to be called after a delay.
- * @param {number} delay - The delay in milliseconds (default is 500).
- * @returns {Function} Returns a function that can be used as an event handler.
+ * @param {number} delay - The delay in milliseconds.
+ * @returns {Function} - Returns a function that can be used as an event handler.
  */
 function delayFieldFeedback(callback, delay = 500) {
     let timeoutId;
@@ -131,8 +165,8 @@ function delayFieldFeedback(callback, delay = 500) {
 }
 
 /**
- * Attaches an input event listener to form fields to handle input events
- * while delaying form field validation.
+ * Adds an input event listener to form fields to handle input events.
+ * - Delays form field validation using 'delayFieldFeedback' function.
  * @param {Event} event - The input event triggered by the user.
  */
 contactForm.addEventListener(
@@ -160,17 +194,9 @@ contactForm.addEventListener(
     })
 );
 
-// Resets form field border styles on form submission.
-function resetFormFieldBorders() {
-    const formFields = document.querySelectorAll('.form-field');
-
-    formFields.forEach((formField) => {
-        formField.classList.remove('success', 'error');
-    });
-}
-
 /**
- * Attaches a submit event listener to the form to send it via 'EmailJS' if valid.
+ * Adds a submit event listener to the contact form to send it if valid.
+ * - Utilizes the 'EmailJS' library to send the form.
  * @param {Event} event - The submit event triggered by the user.
  */
 contactForm.addEventListener('submit', (event) => {
@@ -183,29 +209,29 @@ contactForm.addEventListener('submit', (event) => {
     const isMessageValid = validateMessageInput();
     const isFormValid = isNameValid && isEmailValid && isSubjectValid && isMessageValid;
 
-    if (isFormValid) sendFormViaEmailjs();
+    if (isFormValid) {
+        sendFormViaEmailJS();
+    }
 });
 
-// Sends a submitted form via 'EmailJS' and displays a success or error message
-function sendFormViaEmailjs() {
+/**
+ * Sends a submitted form using 'EmailJS'.
+ * - Displays a success message upon successful form submission.
+ * - Displays an error message if the form submission fails.
+ */
+function sendFormViaEmailJS() {
     const formSubmitMessage = document.getElementById('formSubmitMessage');
 
     // ServiceID, templateID, id, publicKey
-    emailjs
-        .sendForm('service_3fgmcge', 'template_a6mq49i', '#contactForm', '9-ljn6pGNdbjVUgzh')
-        .then(() => {
-            // Display success message
-            formSubmitMessage.innerHTML = 'Message sent successfully.';
-        })
-        .catch(() => {
-            // Display error message
-            formSubmitMessage.innerHTML = 'Error submitting the form. Please try again.';
-        });
-
-    // Clear the form submission message after a delay
-    setTimeout(() => {
-        formSubmitMessage.innerHTML = '';
-    }, 500);
+    emailjs.sendForm('service_3fgmcge', 'template_a6mq49i', '#contactForm', '9-ljn6pGNdbjVUgzh')
+            .then(() => {
+                // Display success message
+                formSubmitMessage.innerHTML = 'Message sent successfully.';
+            })
+            .catch(() => {
+                // Display error message
+                formSubmitMessage.innerHTML = 'Error submitting the form. Please try again.';
+            });
 
     // Reset form
     contactForm.reset();
@@ -213,7 +239,20 @@ function sendFormViaEmailjs() {
     messageFieldCharCount.innerHTML = '0';
 }
 
-// Updates the message field character count on user input
+/**
+ * Resets form field border styles on form submission.
+ */
+function resetFormFieldBorders() {
+    const formFields = document.querySelectorAll('.form-field');
+
+    formFields.forEach((formField) => {
+        formField.classList.remove('success', 'error');
+    });
+}
+
+/**
+ * Updates the message field character count on user input.
+ */
 function updateMessageFieldCharCount() {
     let charCount = messageField.value.length;
     messageFieldCharCount.innerHTML = charCount;
