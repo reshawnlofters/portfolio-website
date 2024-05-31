@@ -1,14 +1,12 @@
 .skills {
-    width: 100%;
     background-color: var(--custom-light-gray-colour);
-    position: relative;
 }
 
 .skills .section-container {
-    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
     padding: 120px 0;
     margin: auto;
 }
@@ -24,11 +22,11 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--white);
-    border-radius: 10px;
     color: var(--custom-dark-gray-colour);
-    padding: 40px 60px;
+    border-radius: 10px;
     box-shadow: var(--box-shadow-1);
     transition: 0.3s;
+    padding: 40px 60px;
 }
 
 .skills-icons-container div:hover {

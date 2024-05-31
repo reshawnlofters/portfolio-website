@@ -18,10 +18,10 @@
 }
 
 * {
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
 }
 
 html,
@@ -31,14 +31,24 @@ body {
     scroll-behavior: smooth;
 }
 
+.about,
+.contact,
+.footer,
+.home,
+.projects,
+.skills {
+    position: relative;
+    width: 100%;
+}
+
 ul {
     list-style: none;
 }
 
 a {
+    text-align: center;
     color: inherit;
     text-decoration: none;
-    text-align: center;
 }
 
 button {
@@ -87,16 +97,16 @@ button:hover {
 }
 
 hr {
-    background-color: var(--horizontal-rule-colour);
     height: 2px;
     width: 70px;
+    background-color: var(--horizontal-rule-colour);
     border: none;
     margin-bottom: 30px;
 }
 
 nav .fa-sharp {
-    color: var(--white);
     display: none;
+    color: var(--white);
 }
 
 .home br {
@@ -108,6 +118,7 @@ nav .fa-sharp {
     animation: move 2.5s linear infinite;
 }
 
+/* Keyframes for image movement */
 @keyframes move {
     0% {
         transform: translate(-15px, 0px);

@@ -2,8 +2,8 @@
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 100;
     transition: 0.3s ease-in-out;
+    z-index: 100;
 }
 
 nav {
@@ -25,11 +25,11 @@ nav {
 }
 
 .nav-menu ul li {
-    display: inline-block;
     position: relative;
+    display: inline-block;
     color: var(--white);
     font-size: 16px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     padding: 8px 12px;
 }
 
@@ -39,8 +39,8 @@ nav {
     height: 2px;
     width: 0;
     content: '';
-    margin: auto;
     transition: 0.5s;
+    margin: auto;
 }
 
 .nav-menu ul li:hover::after {

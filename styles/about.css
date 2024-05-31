@@ -1,14 +1,12 @@
 .about {
-    position: relative;
     background-color: var(--custom-white-colour);
-    width: 100%;
 }
 
 .about .section-container {
-    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
     padding: 150px 0;
     margin: auto;
 }

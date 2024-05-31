@@ -1,14 +1,12 @@
 .projects {
-    position: relative;
     background-color: var(--custom-white-colour);
-    width: 100%;
 }
 
 .projects .section-container {
-    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
     padding: 105px 0 !important;
     margin: auto;
 }
@@ -26,15 +24,15 @@
 }
 
 .project-img,
-.project-info-container {
+.project-details-container {
     width: 500px;
 }
 
 .project-img {
     height: 270px;
-    object-fit: cover;
     border-radius: 10px;
     box-shadow: var(--box-shadow-2);
+    object-fit: cover;
     cursor: pointer;
 }
 
@@ -42,14 +40,14 @@
     box-shadow: var(--box-shadow-3);
 }
 
-.project-info-container {
+.project-details-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 50px;
 }
 
-.project-info-container p {
+.project-details-container p {
     font-size: 15px;
     color: var(--custom-dark-gray-colour);
     margin-bottom: 14px;
@@ -76,7 +74,7 @@
     margin-left: 20px;
 }
 
-.project-info-container hr {
+.project-details-container hr {
     width: 50px;
     margin-bottom: 14px;
 }

@@ -1,7 +1,5 @@
 footer {
-    width: 100%;
     color: var(--white);
-    position: relative;
 }
 
 footer .section-container {
