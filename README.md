@@ -1,14 +1,12 @@
-# Reshawn Lofters - Portfolio Website
+# Portfolio Website
 
 ## Overview
-Explore my portfolio to learn more about me and preview my software engineering and data science projects.
+Explore my portfolio to learn more about me and my personal projects in Software Engineering and Data Science.
+
+Visit my portfolio at [reshawnlofters.com](https://reshawnlofters.com/).
 
 ## Technologies Used
-HTML5, CSS3, JavaScript (ES6), Git
+- HTML, CSS, JavaScript, Git, GitHub Pages
 
-## Getting Started
-To explore my portfolio, simply visit [www.reshawnlofters.com](https://www.reshawnlofters.com).
-
-## Developer
-**Reshawn Lofters**
-- LinkedIn: [in/reshawnlofters](https://www.linkedin.com/in/reshawnlofters/)
+## Author
+This portfolio is developed and maintained by Reshawn Lofters. For inquiries, suggestions, or feedback, please contact Reshawn Lofters at reshawnalofters@gmail.com.
