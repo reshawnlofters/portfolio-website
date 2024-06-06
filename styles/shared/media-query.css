@@ -134,6 +134,7 @@
     }
 
     .nav-menu ul {
+
         padding: 30px;
     }
 
@@ -146,7 +147,7 @@
     }
 
     header.scrolled .nav-menu ul li {
-        color: var(--white);
+        color: var(--white) !important;
     }
 
     header.scrolled #openNavMenuIcon {
