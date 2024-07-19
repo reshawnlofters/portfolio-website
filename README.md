@@ -1,12 +1,15 @@
 # Portfolio Website
 
 ## Overview
-Explore my portfolio to learn more about me and my personal projects in Software Engineering and Data Science.
+My portfolio allows you to explore my projects and learn about my skills and experience in Software Engineering and Data Analysis.
 
-Visit my portfolio at [reshawnlofters.com](https://reshawnlofters.com/).
+To explore my portfolio, visit [reshawnlofters.com](https://reshawnlofters.com).
 
 ## Technologies Used
-- HTML, CSS, JavaScript, Git, GitHub Pages
+- JavaScript, HTML, CSS, Git, Microsoft Azure Cloud
 
 ## Author
-This portfolio is developed and maintained by Reshawn Lofters. For inquiries, suggestions, or feedback, please contact Reshawn Lofters at reshawnalofters@gmail.com.
+This portfolio is developed and maintained by Reshawn Lofters. For inquiries, suggestions, or feedback, please email [reshawnalofters@gmail.com](mailto:reshawnalofters@gmail.com).
+
+## License
+This project is licensed under a Custom License. See the [LICENSE](./LICENSE) file for details.
