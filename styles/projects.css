@@ -20,6 +20,9 @@
 .project-title {
     font-size: 22px;
     font-weight: 600;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-bottom: 14px;
 }
 
