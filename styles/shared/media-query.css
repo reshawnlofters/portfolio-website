@@ -188,7 +188,7 @@
 
 @media (max-width: 550px) {
     /* Projects */
-    .project-img {
+    .project-image {
         width: 70% !important;
     }
 }

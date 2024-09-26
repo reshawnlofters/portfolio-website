@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     width: 80%;
+    /* height: 2000px !important; */
     padding: 105px 0 !important;
     margin: auto;
 }
@@ -26,12 +27,12 @@
     margin-bottom: 14px;
 }
 
-.project-img,
+.project-image,
 .project-details-container {
     width: 500px;
 }
 
-.project-img {
+.project-image {
     height: 270px;
     border-radius: 10px;
     box-shadow: var(--box-shadow-2);
@@ -39,7 +40,7 @@
     cursor: pointer;
 }
 
-.project-img:hover {
+.project-image:hover {
     box-shadow: var(--box-shadow-3);
 }
 
