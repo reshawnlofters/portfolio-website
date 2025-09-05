@@ -22,13 +22,13 @@
         display: none;
     }
 
-    .home img {
+    /* .home img {
         display: none;
-    }
+    } */
 
-    .home .section-container {
+    /* .home .section-container {
         text-align: center;
-    }
+    } */
 
     .name-heading,
     .role-heading {
@@ -47,9 +47,9 @@
     } */
 
     /* About */
-    .about .section-container img {
+    /* .about .section-container img {
         display: none;
-    }
+    } */
 
     .about .section-container p {
         width: 92%;

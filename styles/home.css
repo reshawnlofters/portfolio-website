@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 100vh;
     width: 80%;
     color: var(--white);
@@ -51,7 +52,7 @@
     margin-right: 20px;
 } */
 
-.resume-button {
+/* .resume-button {
     background-color: var(--black);
     border: 1px solid white;
-}
+} */
