@@ -34,6 +34,10 @@
     margin: -10px 0 10px 0;
 }
 
+.skills-icons-container div .skill-image {
+    height: 130px;
+}
+
 .skills-icons-container label {
     font-size: 18px;
 }

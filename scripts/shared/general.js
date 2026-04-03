@@ -27,9 +27,9 @@ document.addEventListener('scroll', () => {
  * - Targets the 'multi-text-effect' element within 'role-heading'.
  */
 new Typed('.multi-text-effect', {
-    strings: ['Developer', 'Enthusiast'],
-    typeSpeed: 80,
-    backSpeed: 80,
+    strings: ['Developer'],
+    typeSpeed: 100,
+    backSpeed: 100,
     loop: true,
 });
 
